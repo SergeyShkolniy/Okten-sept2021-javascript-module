@@ -82,11 +82,12 @@
 
 // let heightC = 10;
 // let dC = 4;
+// let rC = dC / 2;
 // let pi = 3.14;
-// let v = pi*(Math.pow(dC, 2))*heightC;
+// let v = pi*(Math.pow(rC, 2))*heightC;
 //
 // console.log('Высота цилиндра', heightC, 'м')
-// console.log('Диаметр цилинда', dC, 'м')
+// console.log('Радиус цилинда', rC, 'м')
 // console.log('Объем цилиндра', v, 'м')
 
 // ___________________________________________________________________________________________________
