@@ -24,7 +24,7 @@
 // let book = {
 //     title: 'Harry Potter',
 //     page: 350,
-//     genre: 'Fantasy',
+//     genre: 'Fantasy'
 // }
 // console.log(book);
 
@@ -36,8 +36,7 @@
 //     title: 'Harry Potter',
 //     page: 350,
 //     genre: 'Fantasy',
-//     author: 'Joanne Rowling',
-//
+//     author: 'Joanne Rowling'
 // }
 // console.log(book);
 
@@ -50,13 +49,13 @@
 //     title: 'Harry Potter',
 //     page: 350,
 //     genre: 'fantasy',
-//     author: 'Joanne Rowling',
+//     author: 'Joanne Rowling'
 // },
 //     book2 = {
 //         title: 'Sherlock Holmes',
 //         page: 289,
 //         genre: 'detective',
-//         author: 'Arthur Conan Doyle',
+//         author: 'Arthur Conan Doyle'
 //     }
 // ]
 // console.log(books);
