@@ -69,7 +69,7 @@
 
 // let height = 23;
 // let width = 10;
-// let s = (height*width);
+// let s = height*width;
 //
 // console.log('Высота прямоугольника', height, 'см')
 // console.log('Ширина прямоугольника', width, 'см')
@@ -83,7 +83,7 @@
 // let heightC = 10;
 // let dC = 4;
 // let pi = 3.14;
-// let v = (pi*(Math.pow(dC, 2))*heightC);
+// let v = pi*(Math.pow(dC, 2))*heightC;
 //
 // console.log('Высота цилиндра', heightC, 'м')
 // console.log('Диаметр цилинда', dC, 'м')
