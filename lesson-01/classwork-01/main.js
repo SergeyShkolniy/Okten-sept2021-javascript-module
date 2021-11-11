@@ -12,7 +12,7 @@
 //     Math.floor(Math.random() * 10),
 //     Math.floor(Math.random() * 10),
 // ];
-// const result = (array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6] + array[7] + array[8] + array[9]);
+// const result = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6] + array[7] + array[8] + array[9];
 //
 // console.log(array);
 // console.log(result);
@@ -45,13 +45,13 @@
 // 4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
 
 // let books = [
-//     book1 = {
+//     {
 //     title: 'Harry Potter',
 //     page: 350,
 //     genre: 'fantasy',
 //     author: 'Joanne Rowling'
 // },
-//     book2 = {
+//     {
 //         title: 'Sherlock Holmes',
 //         page: 289,
 //         genre: 'detective',
@@ -69,7 +69,7 @@
 
 // let height = 23;
 // let width = 10;
-// let s = (2*(height+width));
+// let s = (height*width);
 //
 // console.log('Высота прямоугольника', height, 'см')
 // console.log('Ширина прямоугольника', width, 'см')
@@ -80,13 +80,14 @@
 // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
 // результат помістіть у змінну v.
 
-/*let heightC = 10;
-let dC = 4;
-let v = (heightC*dC);
-
-console.log('Высота цилиндра', heightC, 'м')
-console.log('Диаметр цилинда', dC, 'м')
-console.log('Объем цилиндра', v, 'м')*/
+// let heightC = 10;
+// let dC = 4;
+// let pi = 3.14;
+// let v = (pi*(Math.pow(dC, 2))*heightC);
+//
+// console.log('Высота цилиндра', heightC, 'м')
+// console.log('Диаметр цилинда', dC, 'м')
+// console.log('Объем цилиндра', v, 'м')
 
 // ___________________________________________________________________________________________________
 
@@ -95,7 +96,7 @@ console.log('Объем цилиндра', v, 'м')*/
 
 // let n = 3;
 // let m = 4;
-// let hypotenuse= (((Math.pow(n, 2))+(Math.pow(m, 2)))/5);
+// let hypotenuse= Math.sqrt((Math.pow(n, 2))+(Math.pow(m, 2)));
 // console.log(hypotenuse)
 
 // ___________________________________________________________________________________________________
