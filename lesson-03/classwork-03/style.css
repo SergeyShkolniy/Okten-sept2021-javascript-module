@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.simpsons{
+    display: flex;
+    justify-content: space-around;
+
+}
+.simpson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    max-height: 800px;
+    text-align: justify;
+    padding: 0 10px;
+}
+.simpson p{
+    padding: 20px 0;
+    flex-grow: 1;
+}
+.simpson img,
+.product-image{
+    width: 150px;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-title{
+    padding: 15px 0;
+}
