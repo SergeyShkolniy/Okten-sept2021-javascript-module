@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap,
+.users-box {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-card {
+    max-width: 260px;
+    max-height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.post-card h3 {
+    height: 80px;
+    padding: 5px;
+    border-top: 1px solid #c98e24;
+}
+
+.post-card p {
+
+    text-align: justify;
+}
+
+/*______________________________________*/
+
+.users-box {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.user-block {
+    width: 600px;
+    border-top: 1px solid #c98e24;
+    padding: 15px;
+}
+.user-block h3{
+    padding: 5px 0 0 35px;
+}
+.address-block{
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
