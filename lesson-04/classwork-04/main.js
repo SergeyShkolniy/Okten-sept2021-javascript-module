@@ -159,7 +159,7 @@
 //     }
 //
 // }
-// reverseArray(10, 20, 30, 40, 50)
+// reverseArray()
 //
 // console.log(array);
 // console.log(newArray);
