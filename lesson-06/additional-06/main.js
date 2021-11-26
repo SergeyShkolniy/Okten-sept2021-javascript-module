@@ -28,27 +28,36 @@
 // Примітка
 // Для тих, хто дуже розумний, та почне використовувати регулярні вирази одразу "ні". Своїм мозком подумайте над протоколом, з регулярками будете потім бавитись.
 
-
-let mail = prompt('Введите Вашу электронную почту');
-
-const validMail = (mail) => {
-
-
-    if (mail === '') {
-        alert('Вы не ввели электронную почту');
-        return false;
-    }
-    if (mail !== mail.trim()) {
-        return mail.trim();
-    }
-    if (mail !== mail.indexOf('@')) {
-        alert('Вы ввели адресс без знака @');
-        return false;
-    }
-
-
-}
-console.log(validMail(mail))
+//
+// let mail = prompt('Введите Вашу электронную почту');
+//
+// const validMail = (mail) => {
+//
+//     if (mail === '') {
+//         alert('Вы не ввели электронную почту');
+//         return false;
+//     }
+//     let dog = mail.indexOf('@')
+//     if (dog === -1) {
+//         alert('Вы ввели адресс без знака @');
+//         return false;
+//     }
+//     if (dog < 1) {
+//         alert('Вы ничего не ввели до знака @');
+//         return false;
+//     }
+//     if ((mail.charAt(dog - 1) === '.') || (mail.charAt(dog + 1) === '.') || (mail.charAt(dog + 2) === '.')) {
+//         alert('Вы ввели адресс в котором . после @ стоит менне чем на 2 символа');
+//         return false;
+//     }
+//     if (mail !== mail.trim()) {
+//         return mail.trim();
+//     }
+//     alert('Поздравляем Вы ввели корректный электронный адрес!')
+//     return mail.toLowerCase();
+// };
+//
+// console.log(validMail(mail))
 
 
 // ----------------------------------------------------------------------
