@@ -28,36 +28,31 @@
 // Примітка
 // Для тих, хто дуже розумний, та почне використовувати регулярні вирази одразу "ні". Своїм мозком подумайте над протоколом, з регулярками будете потім бавитись.
 
+// let email = prompt('Введите Вашу электронную почту');
+// const validatorEmail = (email) => {
 //
-// let mail = prompt('Введите Вашу электронную почту');
+//     let array = email.split('@');
 //
-// const validMail = (mail) => {
+//     if (array.length !== 2) {
+//         alert('Введенный адрес не корректный')
+//         return false;
+//     }
 //
-//     if (mail === '') {
-//         alert('Вы не ввели электронную почту');
+//     let arrayTwo = array[1].split('.');
+//
+//     if (arrayTwo.length !== 2) {
+//         alert('Введенный адрес не содержит точки после @')
+//         return false;
+//     } else if (arrayTwo[0].length < 2 || arrayTwo[1].length < 2) {
+//         alert('Введенный адрес не имеет минимум двух символов после @ и перед .')
 //         return false;
 //     }
-//     let dog = mail.indexOf('@')
-//     if (dog === -1) {
-//         alert('Вы ввели адресс без знака @');
-//         return false;
-//     }
-//     if (dog < 1) {
-//         alert('Вы ничего не ввели до знака @');
-//         return false;
-//     }
-//     if ((mail.charAt(dog - 1) === '.') || (mail.charAt(dog + 1) === '.') || (mail.charAt(dog + 2) === '.')) {
-//         alert('Вы ввели адресс в котором . после @ стоит менне чем на 2 символа');
-//         return false;
-//     }
-//     if (mail !== mail.trim()) {
-//         return mail.trim();
-//     }
+//
 //     alert('Поздравляем Вы ввели корректный электронный адрес!')
-//     return mail.toLowerCase();
+//     return email.trim().toLowerCase();
 // };
 //
-// console.log(validMail(mail))
+// console.log(validatorEmail(email))
 
 
 // ----------------------------------------------------------------------
