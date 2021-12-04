@@ -236,6 +236,7 @@ let usersList = [
 let container = document.createElement('div');
 container.classList.add('container');
 container.style.display = 'flex';
+container.style.justifyContent = 'center';
 container.style.flexWrap = 'wrap';
 document.body.appendChild(container);
 
@@ -244,9 +245,8 @@ for (let user of usersList) {
     let wrapper = document.createElement('div');
     wrapper.classList.add('wrapper');
     wrapper.style.border = 'solid 1px ';
-    wrapper.style.width = '600px';
-    wrapper.style.margin = '0 auto';
-    wrapper.style.marginBottom = '20px';
+    wrapper.style.width = '500px';
+    wrapper.style.margin = '10px';
     wrapper.style.padding = '10px';
     container.appendChild(wrapper);
 
@@ -265,7 +265,6 @@ for (let user of usersList) {
             itemObject.innerText = `${userKey}:`
             itemObject.style.fontSize = '20px';
             itemObject.style.paddingBottom = '10px';
-
             wrapper.appendChild(itemObject);
 
             for (const keyObject in user[userKey]) {
