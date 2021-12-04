@@ -218,56 +218,56 @@ let users = [
 //     При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
 //     Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
 
-let rules = [
-    {
-        title: 'Первое правило Бойцовского клуба.',
-        body: 'Никому не рассказывать о Бойцовском клубе.'
-    },
-    {
-        title: 'Второе правило Бойцовского клуба.',
-        body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-    },
-    {
-        title: 'Третье правило Бойцовского клуба.',
-        body: 'В схватке участвуют только двое.'
-    },
-    {
-        title: 'Четвертое правило Бойцовского клуба.',
-        body: 'Не более одного поединка за один раз.'
-    },
-    {
-        title: 'Пятое правило Бойцовского клуба.',
-        body: 'Бойцы сражаются без обуви и голые по пояс.'
-    },
-    {
-        title: 'Шестое правило Бойцовского клуба.',
-        body: 'Поединок продолжается столько, сколько потребуется.'
-    },
-    {
-        title: 'Седьмое правило Бойцовского клуба.',
-        body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-    },
-    {
-        title: 'Восьмое и последнее правило Бойцовского клуба.',
-        body: 'Новичок обязан принять бой.'
-    }
-];
-let classCounter = 1
-
-let tagDiv = document.createElement('div');
-tagDiv.id = 'wrapper'
-document.body.appendChild(tagDiv);
-
-for (let rule of rules) {
-    let tagDivBox = document.createElement('div');
-    tagDivBox.classList.add('rules');
-    tagDivBox.setAttribute('class', 'rules rule' + classCounter);
-    classCounter++
-    tagDiv.appendChild(tagDivBox);
-    let tagH2 = document.createElement('h2');
-    tagH2.innerHTML = `${rule.title}`;
-    tagDivBox.appendChild(tagH2);
-    let tagP = document.createElement('p');
-    tagP.innerHTML = `${rule.body}`;
-    tagDivBox.appendChild(tagP);
-}
+// let rules = [
+//     {
+//         title: 'Первое правило Бойцовского клуба.',
+//         body: 'Никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Второе правило Бойцовского клуба.',
+//         body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Третье правило Бойцовского клуба.',
+//         body: 'В схватке участвуют только двое.'
+//     },
+//     {
+//         title: 'Четвертое правило Бойцовского клуба.',
+//         body: 'Не более одного поединка за один раз.'
+//     },
+//     {
+//         title: 'Пятое правило Бойцовского клуба.',
+//         body: 'Бойцы сражаются без обуви и голые по пояс.'
+//     },
+//     {
+//         title: 'Шестое правило Бойцовского клуба.',
+//         body: 'Поединок продолжается столько, сколько потребуется.'
+//     },
+//     {
+//         title: 'Седьмое правило Бойцовского клуба.',
+//         body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+//     },
+//     {
+//         title: 'Восьмое и последнее правило Бойцовского клуба.',
+//         body: 'Новичок обязан принять бой.'
+//     }
+// ];
+// let classCounter = 1
+//
+// let tagDiv = document.createElement('div');
+// tagDiv.id = 'wrapper'
+// document.body.appendChild(tagDiv);
+//
+// for (let rule of rules) {
+//     let tagDivBox = document.createElement('div');
+//     tagDivBox.classList.add('rules');
+//     tagDivBox.setAttribute('class', 'rules rule' + classCounter);
+//     classCounter++
+//     tagDiv.appendChild(tagDivBox);
+//     let tagH2 = document.createElement('h2');
+//     tagH2.innerHTML = `${rule.title}`;
+//     tagDivBox.appendChild(tagH2);
+//     let tagP = document.createElement('p');
+//     tagP.innerHTML = `${rule.body}`;
+//     tagDivBox.appendChild(tagP);
+// }
