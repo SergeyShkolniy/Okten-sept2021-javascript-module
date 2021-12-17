@@ -1,9 +1,9 @@
 function wakeUp(iWokeUp, callback) {
     setTimeout(() => {
         if (iWokeUp) {
-            callback('1) Я проснулся в 7:20', null);
+            callback(null, '1) Я проснулся в 7:20', );
         } else {
-            callback(null, '1) Я проспал или продолжаю спать');
+            callback('1) Я проспал или продолжаю спать', null);
         }
     }, 3000)
 
@@ -12,9 +12,9 @@ function wakeUp(iWokeUp, callback) {
 function shower(iWentToShower, callback) {
     setTimeout(() => {
         if (iWentToShower) {
-            callback('2) Сходил в душ', null);
+            callback(null, '2) Сходил в душ');
         } else {
-            callback(null, '2) Остался грязным');
+            callback('2) Остался грязным', null);
         }
     }, 1000)
 }
@@ -22,9 +22,9 @@ function shower(iWentToShower, callback) {
 function breakfast(iHadBreakfast, callback) {
     setTimeout(() => {
         if (iHadBreakfast) {
-            callback('3) Позавтракал', null);
+            callback(null, '3) Позавтракал');
         } else {
-            callback(null, '3) Остался голодным');
+            callback('3) Остался голодным', null);
         }
     }, 500)
 }
@@ -32,9 +32,9 @@ function breakfast(iHadBreakfast, callback) {
 function roadToWork(iDroveToWork, callback) {
     setTimeout(() => {
         if (iDroveToWork) {
-            callback('4) Доехал до работы', null);
+            callback(null, '4) Доехал до работы');
         } else {
-            callback(null, '4) Не добрался до работы');
+            callback('4) Не добрался до работы', null);
         }
     }, 5000)
 }
@@ -42,9 +42,9 @@ function roadToWork(iDroveToWork, callback) {
 function worked(iWorked, callback) {
     setTimeout(() => {
         if (iWorked) {
-            callback('5) Плодотворно поработал', null);
+            callback(null, '5) Плодотворно поработал');
         } else {
-            callback(null, '5) Не отработал день по причине болезни');
+            callback('5) Не отработал день по причине болезни', null);
         }
     }, 300)
 }
@@ -52,9 +52,9 @@ function worked(iWorked, callback) {
 function supermarket(wentToTheSupermarket, callback) {
     setTimeout(() => {
         if (wentToTheSupermarket) {
-            callback('6) Скупился продуктами в магазине', null);
+            callback(null, '6) Скупился продуктами в магазине');
         } else {
-            callback(null, '6) Не купил продуктов, магазин был закрыт');
+            callback('6) Не купил продуктов, магазин был закрыт', null);
         }
     }, 900)
 }
@@ -62,9 +62,9 @@ function supermarket(wentToTheSupermarket, callback) {
 function roadToHome(iDroveToHome, callback) {
     setTimeout(() => {
         if (iDroveToHome) {
-            callback('7) Приехал домой', null);
+            callback(null, '7) Приехал домой');
         } else {
-            callback(null, '7) Задержался на работе');
+            callback('7) Задержался на работе', null);
         }
     }, 800)
 }
@@ -72,9 +72,9 @@ function roadToHome(iDroveToHome, callback) {
 function dinner(iHadDinner, callback) {
     setTimeout(() => {
         if (iHadDinner) {
-            callback('8) Поужинал с семьей', null);
+            callback(null, '8) Поужинал с семьей');
         } else {
-            callback(null, '8) Остался голодным');
+            callback('8) Остался голодным', null);
         }
     }, 1500)
 }
@@ -82,9 +82,9 @@ function dinner(iHadDinner, callback) {
 function shower2(iWentToShower2, callback) {
     setTimeout(() => {
         if (iWentToShower2) {
-            callback('9) Сходил в душ', null);
+            callback(null, '9) Сходил в душ');
         } else {
-            callback(null, '9) Остался грязным');
+            callback('9) Остался грязным', null);
         }
     }, 100)
 }
@@ -92,76 +92,76 @@ function shower2(iWentToShower2, callback) {
 function sleep(iFellSleep, callback) {
     setTimeout(() => {
         if (iFellSleep) {
-            callback('10) Лег спать', null);
+            callback(null, '10) Лег спать');
         } else {
-            callback(null, '10) Не получилось уснуть');
+            callback('10) Не получилось уснуть', null);
         }
     }, 1700)
 }
 
 console.log('-------------------------------');
 
-wakeUp(true, (yes, no) => {
-    if (yes) {
-        console.log(yes);
+
+wakeUp(true, (error, yes) => {
+    if (error) {
+        console.error(error);
     } else {
-        console.error(no);
+        console.log(yes);
     }
-    shower(false, (yes, no) => {
-        if (yes) {
-            console.log(yes);
+    shower(false, (error, yes) => {
+        if (error) {
+            console.error(error);
         } else {
-            console.error(no);
+            console.log(yes);
         }
-        breakfast(true, (yes, no) => {
-            if (yes) {
-                console.log(yes);
+        breakfast(true, (error, yes) => {
+            if (error) {
+                console.error(error);
             } else {
-                console.error(no);
+                console.log(yes);
             }
-            roadToWork(true, (yes, no) => {
-                if (yes) {
-                    console.log(yes);
+            roadToWork(true, (error, yes) => {
+                if (error) {
+                    console.error(error);
                 } else {
-                    console.error(no);
+                    console.log(yes);
                 }
-                worked(true, (yes, no) => {
-                    if (yes) {
-                        console.log(yes);
+                worked(true, (error, yes) => {
+                    if (error) {
+                        console.error(error);
                     } else {
-                        console.error(no);
+                        console.log(yes);
                     }
-                    supermarket(true, (yes, no) => {
-                        if (yes) {
-                            console.log(yes);
+                    supermarket(true, (error, yes) => {
+                        if (error) {
+                            console.error(error);
                         } else {
-                            console.error(no);
+                            console.log(yes);
                         }
-                        roadToHome(true, (yes, no) => {
-                            if (yes) {
-                                console.log(yes);
+                        roadToHome(true, (error, yes) => {
+                            if (error) {
+                                console.error(error);
                             } else {
-                                console.error(no);
+                                console.log(yes);
                             }
-                            dinner(false, (yes, no) => {
-                                if (yes) {
-                                    console.log(yes);
+                            dinner(false, (error, yes) => {
+                                if (error) {
+                                    console.error(error);
                                 } else {
-                                    console.error(no);
+                                    console.log(yes);
                                 }
-                                shower2(true, (yes, no) => {
-                                    if (yes) {
-                                        console.log(yes);
+                                shower2(true, (error, yes) => {
+                                    if (error) {
+                                        console.error(error);
                                     } else {
-                                        console.error(no);
+                                        console.log(yes);
                                     }
-                                    sleep(true, (yes, no) => {
-                                        if (yes) {
-                                            console.log(yes);
+                                    sleep(true, (error, yes) => {
+                                        if (error) {
+                                            console.error(error);
                                         } else {
-                                            console.error(no);
+                                            console.log(yes);
                                         }
-                                        console.log('-------------------------------');
                                     });
                                 });
                             });
